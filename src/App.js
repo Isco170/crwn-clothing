@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 
 import './App.css';
 
-import Header from './components/header/header.component';
+import Header from './components/header/header.component'
 import HomePage from './pages/homepage/homepage.component';
 import SignInAndSignUpPage from './pages/sign-in-sign-up/sign-in-sign-up.component';
 import ShopPage from './pages/shop/shop.component';
@@ -35,7 +35,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Header />
+        <Header currentUser = { this.state.currentUser} />
         <Switch>
           <Route exact path='/' component={HomePage} />
           <Route path='/shop' component={ShopPage} />
